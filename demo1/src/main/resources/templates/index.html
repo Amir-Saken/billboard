@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>The Billboard Usage System</title>
+    <link rel="shortcut icon" href="pics/icon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="pics/billboard.svg" alt="logo" width="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#info">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#billboard">Billboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sign">Buy Now</a>
+              </li>
+            </ul>
+            <a href="html/info.html" class="user_logo">
+              <img src="pics/user.svg" alt="" />
+            </a>
+            <a href="/signin" class="btn text-dark" type="submit">
+              Sign in
+            </a>
+<!--            <a class="nav-link" href="/signin" th:text="${loggedIn} ? 'Hello' : 'sign in'"></a>-->
+          </div>
+        </div>
+      </nav>
+
+      <div class="mid">
+        <video autoplay muted loop>
+          <source
+            class="embed-responsive"
+            src="videos/billboard.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="hero text-center">
+          <h2 class="text-dark display-2 font-weight-bold">
+            The Billboard Usage System
+          </h2>
+          <p class="text-dark mx-auto">
+            We are a company that receive people our billboards
+          </p>
+          <a class="text-dark" href="#info">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="info" class="info py-5">
+      <div class="row align-items-center container my-5 mx-auto">
+        <div
+          class="wow fadeInLeft text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5"
+        >
+          <h6>Info</h6>
+          <h2>We are a company that receive people our billboards</h2>
+          <p>
+            Basic of our project is make a billboard accessible to simple users.
+          </p>
+          <a href="html/info.html">Learn More</a>
+        </div>
+        <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+          <img class="wow fadeInRight img-fluid rounded-3" src="pics/b1.png" />
+        </div>
+      </div>
+    </section>
+
+    <section id="billboard" class="billboard py-5">
+      <div class="row align-items-center container my-5 mx-auto">
+        <div class="wow fadeInLeft img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+          <img class="wow fadeInLeft img-fluid" src="pics/billboard.svg" />
+        </div>
+        <div
+          class="wow fadeInRight text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5"
+        >
+          <h6>Billboard</h6>
+          <h2>Built for yourself</h2>
+          <p>You can build for your needs and make it clean with us.</p>
+          <a href="html/billboard.html">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="service py-5">
+      <div class="row align-items-center container my-5 mx-auto">
+        <div
+          class="wow fadeInLeft text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5"
+        >
+          <h6>Location</h6>
+          <h2>Choose the place to set your billboard</h2>
+          <p>You can use our map to set your advertisement.</p>
+        </div>
+        <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sign" class="sign py-5">
+      <div class="row align-items-center container my-5 mx-auto">
+        <div
+          class="wow fadeInLeft text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5"
+        >
+          <h6>JOIN OUR TEAM</h6>
+          <h2>Buy Now</h2>
+          <p>Choose one of our products and enjoy.</p>
+          <a href="pricing">Buy Now</a>
+        </div>
+        <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+          <img class="wow fadeInRight img-fluid" src="pics/billboard.svg" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-3">
+      <div class="copy-bottom-txt text-center py-3">
+        <p>
+          © 2023 Billboard. All Rights Reserved | Design by Ramazan, Alikhan,
+          Omar, Nurdaulet, Amir & Samad
+        </p>
+      </div>
+      <div class="social-icons mt-lg-3 mt-2 text-center">
+        <ul>
+          <li>
+            <a href="https://t.me/+xesxLQXLbjBiOTk6"
+              ><span class="fa fa-telegram"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://use.fontawesome.com/df966d76e1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC2OmfB3N-ifcVP7Ty8w0hj4g_0FowDGo&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script>
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: { lat: 43.23936511637847, lng: 76.85199346139333 },
+        });
+
+        const markerPositions = [
+          { lat: 43.23936511637847, lng: 76.85199346139333 },
+          { lat: 43.219782068438754, lng: 76.92818868113477 },
+          { lat: 43.20856175980538, lng: 76.8594303259942 },
+        ];
+
+        const markerIcon = {
+          url: "/pics/icon.ico",
+          scaledSize: new google.maps.Size(32, 32),
+        };
+
+        for (let i = 0; i < markerPositions.length; i++) {
+          const marker = new google.maps.Marker({
+            position: markerPositions[i],
+            map: map,
+            icon: markerIcon,
+          });
+        }
+      }
+
+      window.initMap = initMap;
+    </script>
+  </body>
+</html>

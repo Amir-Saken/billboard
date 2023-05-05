@@ -1,0 +1,115 @@
+body {
+  background-color: #000;
+  font-family: "Anton", sans-serif;
+}
+
+.navbar {
+  background-color: #131313;
+  padding: 1rem 8rem;
+  z-index: 1000;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+  color: #fee715;
+}
+
+#navbarSupportedContent > a {
+  background-color: #fee715;
+  font-size: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+
+a.user_logo {
+  background-color: transparent; /* set the background color to transparent */
+}
+
+#navbarSupportedContent > a.user_logo {
+  background-color: #131313; /* set the background color for other a tags */
+  font-size: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+
+footer {
+  box-sizing: border-box;
+  position: absolute;
+  margin-left: 200px;
+  border: 4px solid #ffffff;
+  border-radius: 24px;
+  display: flex;
+  color: white;
+}
+
+.first_section,
+.second_section,
+.third_section,
+.fourth_section {
+  margin-right: 50px;
+}
+
+.first_section {
+  padding-left: 55px;
+}
+
+.fourth_section {
+  border: 1px solid white;
+}
+
+.fifth_section img {
+  padding-top: 15px;
+  padding-right: 55px;
+  display: grid;
+  width: 200px; /* Adjust the value as needed */
+  height: auto; /* This ensures the aspect ratio is maintained */
+}
+
+.copy-bottom-txt p a {
+  font-size: 18px;
+  color: #000;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.copy-bottom-txt p a:hover {
+  color: #000;
+  text-decoration: underline;
+  padding-top: 4px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 988px) {
+  .navbar {
+    padding: 1rem;
+  }
+  #navbarSupportedContent > ul {
+    padding-left: 0.8rem;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 0.8rem 0;
+  }
+
+  .mid .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .mid .hero p {
+    font-size: 1rem;
+  }
+
+  .mid .hero a {
+    font-size: 0.9rem;
+  }
+}
