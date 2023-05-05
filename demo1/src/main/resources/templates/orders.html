@@ -11,7 +11,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/orders.css" />
+    <link rel="stylesheet" href="../static/css/orders.css" />
   </head>
   <body>
     <header>
@@ -21,7 +21,7 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="pics/ico/icon.ico" alt="logo" width="50" />
+            <img src="../static/pics/ico/icon.ico" alt="logo" width="50" />
           </a>
           <button
             class="navbar-toggler"
@@ -41,8 +41,8 @@
               <li class="nav-item"></li>
               <li class="nav-item"></li>
             </ul>
-            <a href="profile.html" class="user_logo">
-              <img src="pics/svg/user.svg" alt="user" />
+            <a href="/profile" class="user_logo">
+              <img src="../static/pics/svg/user.svg" alt="user" />
             </a>
             <form th:action="@{/logout}" method="post">
               <input type="submit" class="tag btn btn-success text-dark" value="Sign Out"/>
@@ -78,7 +78,7 @@
                 </ul>
               </div>
               <div class="pricingTable-sign-up">
-                <a href="map.html" class="btn btn-default">Buy now</a>
+                <a href="/map" class="btn btn-default">Buy now</a>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@
                 </ul>
               </div>
               <div class="pricingTable-sign-up">
-                <a href="map.html" class="btn btn-default">Buy now</a>
+                <a href="/map" class="btn btn-default">Buy now</a>
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@
                 </ul>
               </div>
               <div class="pricingTable-sign-up">
-                <a href="map.html" class="btn btn-default">Buy now</a>
+                <a href="/map" class="btn btn-default">Buy now</a>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@
                 </ul>
               </div>
               <div class="pricingTable-sign-up">
-                <a href="map.html" class="btn btn-default">Buy now</a>
+                <a href="/map" class="btn btn-default">Buy now</a>
               </div>
             </div>
           </div>

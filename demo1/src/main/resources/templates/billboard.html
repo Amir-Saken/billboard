@@ -9,7 +9,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="/css/billboard.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/billboard.css" />
   </head>
   <body>
     <header>
@@ -18,7 +18,7 @@
         style="background-color: black"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="home.html">
+          <a class="navbar-brand" href="/home">
             <img src="/pics/ico/icon.ico" alt="" width="50" />
           </a>
           <button
@@ -48,11 +48,11 @@
               </li>
             </ul>
             <a
-              href="profile.html"
+              href="/profile"
               class="user_logo"
               style="background-color: black"
             >
-              <img src="/pics/svg/user.svg" alt="user" />
+              <img src="../static/pics/svg/user.svg" alt="user" />
             </a>
             <form th:action="@{/logout}" method="post">
               <input type="submit" class="tag btn btn-success text-dark" value="Sign Out"/>
@@ -65,7 +65,7 @@
         <video autoplay muted loop>
           <source
             class="embed-responsive"
-            src="/videos/billboardsex.mp4"
+            src="../static/videos/billboardsex.mp4"
             type="video/mp4"
           />
         </video>
@@ -90,7 +90,7 @@
           <h6>Billboard</h6>
           <h2>Size</h2>
           <p>Choose the size that makes you CUM.</p>
-          <a href="/pricing.html">Buy Now</a>
+          <a href="/pricing">Buy Now</a>
         </div>
         <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
           <img class="img-fluid" src="/pics/svg/billboard.svg" />
@@ -107,7 +107,7 @@
           <h6>Billboard</h6>
           <h2>Shape</h2>
           <p>Choose thicc shape like big phat booty bitches.</p>
-          <a href="/pricing.html">Buy Now</a>
+          <a href="/pricing">Buy Now</a>
         </div>
       </div>
     </section>
@@ -121,7 +121,7 @@
           <h6>Billboard</h6>
           <h2>Style</h2>
           <p>Choose your style.</p>
-          <a href="/pricing.html">Buy Now</a>
+          <a href="/pricing">Buy Now</a>
         </div>
         <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
           <img class="img-fluid rounded-3" src="/pics/jpg/b2.jpg" />
@@ -138,10 +138,10 @@
           <h6>JOIN OUR TEAM</h6>
           <h2>Buy Now</h2>
           <p>Choose Billboard and enjoy.</p>
-          <a href="/pricing.html">Buy Now</a>
+          <a href="/pricing">Buy Now</a>
         </div>
         <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
-          <img class="img-fluid" src="/pics/svg/billboard.svg" />
+          <img class="img-fluid" src="../static/pics/svg/billboard.svg" />
         </div>
       </div>
     </section>
@@ -167,8 +167,8 @@
       </div>
       <div class="fourth_section"></div>
       <div class="fifth_section">
-        <img src="/pics/svg/billboard.svg" alt="footer_logo" />
-        <img src="/pics/svg/sdu.svg" alt="footer_logo_2" />
+        <img src="../static/pics/svg/billboard.svg" alt="footer_logo" />
+        <img src="../static/pics/svg/sdu.svg" alt="footer_logo_2" />
       </div>
     </footer>
 

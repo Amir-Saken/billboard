@@ -9,8 +9,8 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="/css/info.css" />
-    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/info.css" />
+    <link rel="stylesheet" href="../static/css/animate.css" />
   </head>
   <body>
     <header>
@@ -19,8 +19,8 @@
         style="background-color: black"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="home.html">
-            <img src="/pics/ico/icon.ico" width="50" />
+          <a class="navbar-brand" href="/home">
+            <img src="../static/pics/ico/icon.ico" width="50" />
           </a>
           <button
             class="navbar-toggler"
@@ -36,20 +36,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="info.html">Info</a>
+                <a class="nav-link active" href="/info">Info</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="billboard.html">Billboard</a>
+                <a class="nav-link" href="/billboard">Billboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="map.html">Location</a>
+                <a class="nav-link" href="/map">Location</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Buy Now</a>
+                <a class="nav-link" href="/pricing">Buy Now</a>
               </li>
             </ul>
-            <a href="profile.html" class="user_logo">
-              <img src="/pics/svg/user.svg" alt="user" />
+            <a href="/profile" class="user_logo">
+              <img src="../static/pics/svg/user.svg" alt="user" />
             </a>
             <form th:action="@{/logout}" method="post">
               <input type="submit" class="tag btn btn-success text-dark" value="Sign Out"/>
@@ -62,7 +62,7 @@
         <video autoplay muted loop>
           <source
             class="embed-responsive"
-            src="/videos/info.mp4"
+            src="../static/videos/info.mp4"
             type="video/mp4"
           />
         </video>
@@ -88,10 +88,10 @@
             We were founded in 2023 as a team of smart and talented programmers
             from SDU.
           </p>
-          <a href="pricing.html">Buy Now</a>
+          <a href="/pricing">Buy Now</a>
         </div>
         <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
-          <img class="img-fluid pr-5" src="/pics/svg/sdu.svg" />
+          <img class="img-fluid pr-5" src="../static/pics/svg/sdu.svg" />
         </div>
       </div>
     </section>
@@ -99,13 +99,13 @@
     <section id="products" class="products py-5" style="padding-left: 155px">
       <div class="row align-items-center container my-5">
         <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
-          <img class="img-fluid rounded" src="/pics/jpg/b2.jpg" />
+          <img class="img-fluid rounded" src="../static/pics/jpg/b2.jpg" />
         </div>
         <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
           <h6>INFO</h6>
           <h2>Products</h2>
           <p>Our products are high quality work.</p>
-          <a href="pricing.html">Buy Now</a>
+          <a href="/pricing">Buy Now</a>
         </div>
       </div>
     </section>
@@ -116,10 +116,10 @@
           <h6>JOIN OUR TEAM</h6>
           <h2>Buy Now</h2>
           <p>Choose INFO and enjoy.</p>
-          <a href="pricing.html">Buy Now</a>
+          <a href="/pricing">Buy Now</a>
         </div>
         <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
-          <img class="img-fluid" src="/pics/svg/billboard.svg" />
+          <img class="img-fluid" src="../static/pics/svg/billboard.svg" />
         </div>
       </div>
     </section>
@@ -145,8 +145,8 @@
       </div>
       <div class="fourth_section"></div>
       <div class="fifth_section">
-        <img src="/pics/svg/billboard.svg" alt="footer_logo" />
-        <img src="/pics/svg/sdu.svg" alt="footer_logo_2" />
+        <img src="../static/pics/svg/billboard.svg" alt="footer_logo" />
+        <img src="../static/pics/svg/sdu.svg" alt="footer_logo_2" />
       </div>
     </footer>
     <script src="https://use.fontawesome.com/df966d76e1.js"></script>
