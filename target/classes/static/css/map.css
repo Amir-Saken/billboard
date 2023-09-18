@@ -1,0 +1,254 @@
+* {
+  font-family: "Anton", sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 1rem 8rem;
+  z-index: 1000;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+a.user_logo {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.map {
+  width: 70%;
+  margin-left: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+  color: #fee715;
+}
+
+#navbarSupportedContent form input[type="submit"] {
+  margin-left: 15px;
+  background-color: #fee715 !important;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+
+a.user_logo {
+  background-color: transparent;
+}
+
+#navbarSupportedContent > a.user_logo {
+  background-color: #000000;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+
+.text ul {
+  border-radius: 24px;
+  border: 3px solid #ffffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 200px;
+  width: 70%;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.panel {
+  display: none;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.panel h1 {
+  font-size: 20px;
+  color: white;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  display: block;
+  margin-right: 10px;
+  color: white;
+}
+
+.input-group h1 {
+  font-size: 14px;
+}
+
+.input-group input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.input-group input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.reserved {
+  border: 1px solid #02c839;
+  color: white;
+  background-color: #02c839;
+  width: 500px;
+  height: 50px;
+}
+
+.flex_message {
+  padding-top: 15px;
+}
+
+.flex_message h1 {
+  font-size: 20px;
+  color: #f12330;
+}
+
+.flex_message h2 {
+  font-size: 20px;
+  color: white;
+}
+
+.text li {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 3px solid #ffffff;
+}
+
+.text li button {
+  margin-left: auto;
+  margin-right: 230px;
+}
+
+.text li:last-child {
+  border-bottom: none;
+}
+
+.text li label {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 200px;
+  color: #fff;
+}
+
+.text li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.text li input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fee715;
+}
+
+.service {
+  background: #000;
+}
+
+#service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.service .text h6 {
+  color: #fee715;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.service .text p {
+  color: #f7f5f4;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 988px) {
+  .navbar {
+    padding: 1rem;
+  }
+  #navbarSupportedContent > ul {
+    padding-left: 0.8rem;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 0.8rem 0;
+  }
+
+  .mid .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .mid .hero p {
+    font-size: 1rem;
+  }
+
+  .mid .hero a {
+    font-size: 0.9rem;
+  }
+}
+
+#map {
+  border-radius: 24px;
+  height: 362.4px;
+  width: 100%;
+}

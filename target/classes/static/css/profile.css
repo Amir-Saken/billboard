@@ -1,0 +1,276 @@
+body {
+  background-color: #000;
+  font-family: "Anton", sans-serif;
+}
+.navbar {
+  background-color: #000000;
+  padding: 1rem 8rem;
+  z-index: 1000;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+  color: #fee715;
+}
+
+#navbarSupportedContent > a {
+  background-color: #fee715;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+
+#navbarSupportedContent > a.delete_border {
+  background-color: #000;
+}
+
+#navbarSupportedContent form input[type="submit"] {
+  margin-left: 15px;
+  background-color: #fee715 !important;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+
+a.user_logo {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 988px) {
+  .navbar {
+    padding: 1rem;
+  }
+  #navbarSupportedContent > ul {
+    padding-left: 0.8rem;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 0.8rem 0;
+  }
+
+  .mid .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .mid .hero p {
+    font-size: 1rem;
+  }
+
+  .mid .hero a {
+    font-size: 0.9rem;
+  }
+}
+
+footer {
+  background: #000;
+}
+/*фон подвала */
+.social-icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons ul li a span {
+  color: #fff;
+  width: 34px;
+  background: #000;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin: 0px 2px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 0px 2px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -moz-transition: 0.5s all;
+}
+
+.social-icons ul li a span:hover {
+  color: #fee715;
+}
+
+.copy-bottom-txt p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.social-icons ul li:nth-child(2) {
+  margin: 0 10px;
+}
+
+.copy-bottom-txt p a {
+  font-size: 18px;
+  color: #000;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.copy-bottom-txt p a:hover {
+  color: #000;
+  text-decoration: underline;
+  padding-top: 4px;
+  font-weight: 700;
+}
+
+.fixed-top {
+  position: static;
+}
+
+.orders_text {
+  background-color: #fee715;
+  border-radius: 15px;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+h1 {
+  color: #262626;
+  text-align: center;
+  font-weight: 600;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.name_person {
+  color: #ffffff;
+  margin-left: 320px;
+  margin-top: 20px;
+}
+
+.label {
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #fff;
+  height: 114px;
+  width: 1000px;
+  text-align: center;
+  border-radius: 24px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -moz-transition: 0.5s all;
+}
+
+.ul_li_top ul li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(38, 38, 38, 0.4);
+  list-style-type: none;
+}
+
+.label ul {
+  display: flex;
+}
+
+.ul_li_top ul li:nth-child(n) {
+  margin: 28px 60px;
+}
+
+.ul_li_bottom ul li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #262626;
+}
+
+.mobile_label,
+.mobile_label1,
+.mobile_label2 p {
+  color: white;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  width: 62px;
+  height: 19px;
+}
+
+.mobile_label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 8px;
+  width: 78px;
+  height: 27px;
+  left: 55px;
+  top: 55px;
+  border-radius: 8px;
+  background: #f86f88;
+}
+
+.mobile_label1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 8px;
+  width: 78px;
+  height: 27px;
+  left: 55px;
+  top: 55px;
+  border-radius: 8px;
+  background: #6ff0f8;
+}
+
+.mobile_label2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 8px;
+  width: 95px;
+  height: 27px;
+  left: 55px;
+  top: 55px;
+  border-radius: 8px;
+  background: #82f86f;
+}
+
+.ul_li_bottom ul li:nth-child(4) {
+  margin-left: 125px;
+}
+
+.ul_li_bottom ul li:nth-child(5) {
+  margin-left: 120px;
+}
+
+.ul_li_bottom ul li:nth-child(3) {
+  margin-left: 100px;
+}
+
+.ul_li_bottom ul li:nth-child(2) {
+  margin-left: 70px;
+}
+
+.ul_li_bottom ul li:nth-child(1) {
+  margin-left: 40px;
+}
