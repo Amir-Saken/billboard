@@ -1,2 +1,2 @@
-Main - front-end only /t
+Main - front-end only 
 Master - front-end + back-end 
